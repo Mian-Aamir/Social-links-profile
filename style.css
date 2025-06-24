@@ -1,0 +1,74 @@
+:root {
+  --main-bg-color: hsl(0, 0%, 8%);
+  --box-color: hsl(0, 0%, 12%);
+  --Button-Background-color:hsl(0, 0%, 20%);
+  --font-color: white;
+  --hower-color: hsl(75, 94%, 57%);
+}
+
+body{
+    background-color: var(--main-bg-color);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: var(--box-color);
+    width: 90%;
+    max-width: 25rem;
+    height: 38rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--font-color);
+}
+
+img{
+    margin-top: 1rem;
+    height: 5.9rem;
+    width: 5.9rem;
+    border-radius: 50%;
+}
+
+.coloring{
+    color:var(--hower-color);
+}
+
+.All-Buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+  align-items: center; 
+  width: 100%;
+}
+
+.bOption {
+  width: 80%;                          
+  background-color: var(--Button-Background-color);
+  color: var(--font-color);                  
+  text-decoration: none;              
+  padding: 0.75rem 1rem;           
+  border-radius: 0.5rem;             
+  font-weight: bold;
+  text-align: center;                 
+}
+
+.bOption:hover{
+     background-color: var(--hower-color);
+     color:var(--main-bg-color);
+}
+
+@media (max-width:23.2rem)
+{
+  .All-Buttons {
+    gap: 0.75rem; 
+  }
+
+  img{
+    margin-top: 0;
+  }
+}
